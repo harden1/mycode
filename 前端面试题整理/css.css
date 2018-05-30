@@ -1,0 +1,205 @@
+/*        初始化代码样式*/
+
+
+/*        body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, 
+
+        textarea, th, td { margin:0; padding:0; } 
+
+        body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; } 
+
+        h1, h2, h3, h4, h5, h6{ font-size:100%; } 
+
+        address, cite, dfn, em, var { font-style:normal; } 
+
+        code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
+
+        small{ font-size:12px; } 
+
+        ul, ol { list-style:none; } 
+
+        a { text-decoration:none; } 
+
+        a:hover { text-decoration:underline; } 
+
+        sup { vertical-align:text-top; } 
+
+        sub{ vertical-align:text-bottom; } 
+
+        legend { color:#000; } 
+
+        fieldset, img { border:0; } 
+
+        button, input, select, textarea { font-size:100%; } table { border-collapse:collapse; border-spacing:0; } */
+h2{
+    text-align: center;
+    color:#00ccff;
+}
+.red{
+    color: red;
+}
+.crow {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -ms-column-count: 3;
+    -o-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    -ms-column-gap: 20px;
+    -o-column-gap: 20px;
+    column-gap: 20px;
+    -moz-column-rule: 4px outset #ff00ff;
+    -webkit-column-rule: 4px outset #ff00ff;
+    -ms-column-rule: 6px outset #ff00ff;
+    -o-column-rule: 6px outset #ff00ff;
+    column-rule: 6px outset #ff00ff;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: #000;
+    margin: 80px auto;
+    padding: 100px;
+    border: 30px solid aqua;
+}
+
+
+/*        伪类*/
+
+.example p:first-of-type {
+    color: #f00;
+}
+
+.example p:last-of-type {
+    color: green;
+}
+
+.example p:only-of-type {
+    color: fuchsia;
+}
+
+.example p:only-child {
+    background: aqua;
+}
+
+.example p:nth-child(3) {
+    background: blue;
+}
+
+
+/*        css3动画*/
+
+.animation {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: red;
+    -webkit-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    transform: rotate(9deg);
+    -webkit-animation: mymove 5s infinite;
+    -moz-animation: mymove 5s infinite;
+    -ms-animation: mymove 5s infinite;
+    -o-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 200px;
+    }
+}
+
+@-moz-keyframes mymove {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 200px;
+    }
+}
+
+@-ms-keyframes mymove {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 200px;
+    }
+}
+
+@-o-keyframes mymove {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 200px;
+    }
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 200px;
+    }
+}
+
+#tipTable {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.innerLord {
+    color: pink;
+}
+
+.innerDiff {
+    background: #00deff;
+}
+
+#tipTable td,
+#tipTable th {
+    border: 1px solid black;
+    width: 120px;
+    height: 16px;
+    text-align: center;
+}
+
+.ani {
+    width: 480px;
+    height: 320px;
+    margin: 50px auto;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    background-size: 480px 320px;
+    background-position: center;
+    -webkit-animation-name: "loops";
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes "loops" {
+    0% {
+        background: url(http://d.hiphotos.baidu.com/image/w%3D400/sign=c01e6adca964034f0fcdc3069fc27980/e824b899a9014c08e5e38ca4087b02087af4f4d3.jpg) no-repeat;
+    }
+    25% {
+        background: url(http://b.hiphotos.baidu.com/image/w%3D400/sign=edee1572e9f81a4c2632edc9e72b6029/30adcbef76094b364d72bceba1cc7cd98c109dd0.jpg) no-repeat;
+    }
+    50% {
+        background: url(http://b.hiphotos.baidu.com/image/w%3D400/sign=937dace2552c11dfded1be2353266255/d8f9d72a6059252d258e7605369b033b5bb5b912.jpg) no-repeat;
+    }
+    75% {
+        background: url(http://g.hiphotos.baidu.com/image/w%3D400/sign=7d37500b8544ebf86d71653fe9f9d736/0df431adcbef76095d61f0972cdda3cc7cd99e4b.jpg) no-repeat;
+    }
+    100% {
+        background: url(http://c.hiphotos.baidu.com/image/w%3D400/sign=cfb239ceb0fb43161a1f7b7a10a54642/3b87e950352ac65ce2e73f76f9f2b21192138ad1.jpg) no-repeat;
+    }
+}

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-size: 12px;
+    font-family: ""
+}
+
+body {
+    background-image: url(http://www.qdjj.net/images/beijing.gif);
+    margin: 10px 0 20px;
+}
+
+.teach {
+    width: 710px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.teach-top {
+    height: 82px;
+    margin-right: 5%;
+}
+
+.teach-top img {
+    margin-left: 4.8%;
+}
+
+.teach-top p {
+    float: right;
+    margin-top: 70px;
+}
+
+.teach-top p a {
+    text-decoration: none;
+    color: rgb(255, 0, 153);
+    margin-right: 8px;
+}
+
+.teach-top p a.collection {
+    margin-right: 0;
+}
+
+.teach caption {
+    text-align: center;
+    font-size: 16px;
+    height: 58px;
+    line-height: 58px;
+    font-weight: bold
+}
+
+.teach table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 20px;
+}
+
+.teach table tr th {
+    padding: 2px;
+    height: 23px;
+    color: #003399;
+    padding-left: 10px;
+}
+
+.teach table tr th.teachth {
+    background-image: url(http://www.qdjj.net/images/beijin1.gif);
+    line-height: 150%;
+    font-weight: normal;
+    color: #333;
+    padding-left: 0;
+}
+
+.teach table tr td {
+    height: 26px;
+    padding: 2px;
+    line-height: 150%;
+}
+
+.teach table tr td input[type="checkbox"] {
+    margin: 3px 3px 3px 4px;
+}
+
+i {
+    font-style: normal;
+}
+
+.red {
+    color: red;
+}
+
+.footer {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.blue {
+    color: #0000ff
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS计算器</title>
+    <link rel="stylesheet" href="css/caculate.css">
+<!--    <script src="js/jquery-3.2.0.min.js"></script>-->
+    <script src="js/caculate.js"></script>
+</head>
+
+<body onload="express();">
+    <!--计算器-->
+    <div class="center">
+        <h3>JS计算器</h3>
+        <div class="main">
+            <input type="text" class="result" id="result" readonly="" disabled="disabled">
+            <p>算式提示：<span id="prompt"></span></p>
+            <!--        数字加减乘除-->
+            <ul class="main-l">
+                <li onclick="liNum(this.innerText)">7</li>
+                <li onclick="liNum(this.innerText)">8</li>
+                <li onclick="liNum(this.innerText)">9</li>
+                <li class="mr" onclick="operate(this.innerText)">÷</li>
+                <li onclick="liNum(this.innerText)">4</li>
+                <li onclick="liNum(this.innerText)">5</li>
+                <li onclick="liNum(this.innerText)">6</li>
+                <li class="mr" onclick="operate(this.innerText)">×</li>
+                <li onclick="liNum(this.innerText)">1</li>
+                <li onclick="liNum(this.innerText)">2</li>
+                <li onclick="liNum(this.innerText)">3</li>
+                <li class="mr" onclick="operate(this.innerText)">-</li>
+                <li onclick="liNum(this.innerText)">0</li>
+                <li onclick="minus()">±</li>
+                <li onclick="point()">.</li>
+                <li class="mr" onclick="operate(this.innerText)">+</li>
+            </ul>
+            <!--        清零等于-->
+            <ul class="main-r">
+                <li class="clear" onclick="clearall()">清零</li>
+                <li onclick="operate(this.innerText)">=</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

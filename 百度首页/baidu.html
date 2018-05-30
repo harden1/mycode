@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <title>百度首页</title>
+    <script src="http://res.ky-express.com/wz/js/jquery-1.9.1.js"></script>
+    <script src="js/TouchSlide.1.1.js"></script>
+</head>
+
+<body>
+
+    <!--   PC显示效果-->
+    <div class="main pc">
+        <!--   导航-->
+        <div class="wrapper">
+            <ul>
+                <li><a href="https://www.nuomi.com/?cid=002540">糯米</a></li>
+                <li><a href="http://news.baidu.com">新闻</a></li>
+                <li><a href="http://www.hao123.com">hao123</a></li>
+                <li><a href="http://map.baidu.com">地图</a></li>
+                <li><a href="http://v.baidu.com">视频</a></li>
+                <li><a href="http://tieba.baidu.com">贴吧</a></li>
+                <li class="set"><a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登录</a></li>
+                <li class="login"><a href="http://www.baidu.com/gaoji/preferences.html">设置</a></li>
+                <li class="product" id="more"><a href="javascript:void(0)">更多产品</a></li>
+            </ul>
+        </div>
+        <!--    搜索-->
+        <div class="search">
+            <img src="images/bd_logo1.png" width="270" height="129">
+            <div class="search-inp">
+                <p>
+                    <input type="text" class="searinp"><span></span>
+                    <button type="button" class="baidu">百度一下</button>
+                </p>
+            </div>
+        </div>
+        <!--    底部-->
+        <div class="footer">
+            <div class="qrcode"></div>
+            <p class="celbaidu">手机百度</p>
+            <p class="lh">
+                <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+                <a href="http://home.baidu.com/">关于百度</a>
+                <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome">About Baidu</a>
+                <a href="http://e.baidu.com/?refer=888">百度推广</a>
+            </p>
+            <p class="cp">@2017 Baudui <a href="https://www.baidu.com/duty/">使用百度前必读</a> <a href="http://help.baidu.com/">意见反馈</a> 京ICP证030173号&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a><i></i></p>
+        </div>
+        <!--    侧栏     -->
+        <div class="slide" id="slide">
+            <ul>
+                <li class="item01" id="more"><a href="javascript:void(0)">更多产品</a></li>
+                <li class="item02"><a href="http://music.baidu.com"><span></span>音乐</a></li>
+                <li class="item03"><a href="http://image.baidu.com"><span></span>图片</a></li>
+                <li class="item04"><a href="http://zhidao.baidu.com"><span></span>知道</a></li>
+                <li class="item05"><a href="http://wenku.baidu.com"><span></span>文库</a></li>
+                <li class="item06"><a href="http://top.baidu.com"><span></span>风云榜</a></li>
+                <li class="item07"><a href="//www.baidu.com/more/">全部产品>></a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#more,#slide").mouseover(function(){
+            $("#slide").show();
+        }).mouseout(function(){
+            $("#slide").hide();
+        })
+    </script>
+</body>
+
+</html>

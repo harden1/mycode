@@ -1,0 +1,35 @@
+body,
+html {
+    background: #6AC3EC !important;
+}
+
+.login-logo {
+    padding: 20px 0 30px;
+}
+
+.form-horizontal {
+    max-width: 440px;
+    margin-top: 300px;
+    overflow: hidden;
+    display: inline-block;
+    padding: 0 15px 0 15px;
+}
+
+.form-horizontal {
+    background: url(../images/back.png) repeat;
+    border-radius: 15px;
+}
+
+.login-img img {
+    border-radius: 50%;
+}
+
+.input-group-addon {
+    background: url(../images/login.png) center center no-repeat;
+    background-size: 25px 25px;
+}
+
+.basic-addon1 {
+    background: url(../images/password.png) center center no-repeat;
+    background-size: 25px 25px;
+}

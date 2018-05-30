@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .xiehe {
+            width: 100px;
+            height: 100px;
+            background: aqua;
+            padding: 10px;
+            border: 5px solid red;
+            margin: 30px auto 30px auto;
+            box-shadow: 0px 0px 7px 2px #000;
+        }
+        
+        .xiezi {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        
+        .xiehe1 {
+            width: 130px;
+            height: 130px;
+            background: aqua;
+            padding: 10px;
+            border: 5px solid red;
+            margin: 30px auto 30px auto;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 7px 2px #000;
+        }
+        
+        .xiezi1 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        
+        .flex {
+            margin:30px 0;
+            width: 100%;
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            column-count: 3;
+            -moz-column-rule-style: solid;
+            -webkit-column-rule-style: solid;
+            column-rule-style: solid;
+        }
+        
+        .flex1 {
+            height: 100px;
+            background-color: aqua;
+        }
+        
+        .flex2 {
+            height: 100px;
+            background-color: green;
+        }
+        
+        .flex3 {
+            height: 100px;
+            -webkit-flex: 1;
+            background-color: yellow;
+        }
+        
+        .center {
+            width: 600px;
+            height: 600px;
+            background-color: darkseagreen;
+            margin: 30px auto;
+            display: -moz-box;
+            display: -webkit-box;
+            display: box;
+            -moz-box-pack: center;
+            -webkit-box-pack: center;
+            box-pack: center;
+            -moz-box-align: center;
+            -webkit-box-align: center;
+            box-align: center;
+        }
+        
+        .flex-box {
+            display: -webkit-flex;
+            background-color: #9e5966;
+            margin:30px 0;
+        }
+        
+        .first {
+            height: 100px;
+            -webkit-flex: 1;
+            -webkit-order:2;
+            background-color: aquamarine;
+        }
+        
+        .second {
+            height: 100px;
+            -webkit-flex: 1;
+            -webkit-order:3;
+            background-color: #da7d7d;
+        }
+        
+        .third {
+            height: 200px;
+            -webkit-flex: 1;
+            -webkit-order:1;
+            background-color: #9e7e9e;
+        }
+        
+        .flex-box2 {
+            display: -webkit-box;
+            background-color: #c1b974;
+            -webkit-box-orient:vertical;
+            margin:30px 0;
+        }
+        
+        .first2 {
+            height: 100px;
+            -webkit-flex: 1;
+            background-color: aquamarine;
+        }
+        
+        .second2 {
+            height: 100px;
+            -webkit-flex: 1;
+            background-color: brown;
+        }
+        
+        .third2 {
+            height: 200px;
+            -webkit-flex: 1;
+            background-color: #d0a5d0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--   标准盒模型-->
+    <div class="xiehe">
+        <div class="xiezi">鞋子</div>
+    </div>
+    <hr>
+    <!--    怪异盒模型-->
+    <div class="xiehe1">
+        <div class="xiezi1">鞋子</div>
+    </div>
+    <hr>
+    <!--    css3多列布局-->
+    <div class="flex">
+        <img src="http://img1.gtimg.com/19/1906/190645/19064561_1200x1000_0.jpg" alt="" width="300">有关德马库斯-考辛斯的交易终于达成。重要的事情说三遍：没错，考神这次真的被交易走了。没错，鹈鹕真的只付出了一个受保护的2017首轮签，一个2017二轮签，巴迪-希尔德，兰斯顿-加洛韦外加泰瑞克-埃文斯的到期合同。然后没错，这就是鹈鹕所付出的全部筹码——这笔交易就这样达成。流播近三年的交易流言在一场90分钟的全明星赛后得以终结。 全明星正赛才刚刚结束不过几分钟，大堆的记者蜂拥至考辛斯周围，不断地向他抛来问题。“肯定＊＊的有什么事要发生，”考辛斯说，“从来没有这么多的媒体采访过我。” 大约20分钟后，他成为了鹈鹕队的一员。现在的新奥尔良拥有篮球运动中最有天赋的大个子之二，与此同时，联盟中的其他人还没来得及梳理清楚刚刚发生了什么事情。就像某位联盟消息源所说的那样：“发生了什么？这交易是怎么发生的？我不能理解。” 事实上也没人知道为什么。之前从没有过如此愚蠢虚伪的交易。如果戴尔-登普斯能用巴迪-希尔德交易来德马库斯-考辛斯，那么一切皆有可能。在当下，交易之后的鹈鹕队面临三大问题。有关德马库斯-考辛斯的交易终于达成。重要的事情说三遍：没错，考神这次真的被交易走了。没错，鹈鹕真的只付出了一个受保护的2017首轮签，一个2017二轮签，巴迪-希尔德，兰斯顿-加洛韦外加泰瑞克-埃文斯的到期合同。然后没错，这就是鹈鹕所付出的全部筹码——这笔交易就这样达成。流播近三年的交易流言在一场90分钟的全明星赛后得以终结。 全明星正赛才刚刚结束不过几分钟，大堆的记者蜂拥至考辛斯周围，不断地向他抛来问题。“肯定＊＊的有什么事要发生，”考辛斯说，“从来没有这么多的媒体采访过我。” 大约20分钟后，他成为了鹈鹕队的一员。现在的新奥尔良拥有篮球运动中最有天赋的大个子之二，与此同时，联盟中的其他人还没来得及梳理清楚刚刚发生了什么事情。就像某位联盟消息源所说的那样：“发生了什么？这交易是怎么发生的？我不能理解。” 事实上也没人知道为什么。之前从没有过如此愚蠢虚伪的交易。如果戴尔-登普斯能用巴迪-希尔德交易来德马库斯-考辛斯，那么一切皆有可能。在当下，交易之后的鹈鹕队面临三大问题。有关德马库斯-考辛斯的交易终于达成。重要的事情说三遍：没错，考神这次真的被交易走了。没错，鹈鹕真的只付出了一个受保护的2017首轮签，一个2017二轮签，巴迪-希尔德，兰斯顿-加洛韦外加泰瑞克-埃文斯的到期合同。然后没错，这就是鹈鹕所付出的全部筹码——这笔交易就这样达成。流播近三年的交易流言在一场90分钟的全明星赛后得以终结。 全明星正赛才刚刚结束不过几分钟，大堆的记者蜂拥至考辛斯周围，不断地向他抛来问题。“肯定＊＊的有什么事要发生，”考辛斯说，“从来没有这么多的媒体采访过我。” 大约20分钟后，他成为了鹈鹕队的一员。现在的新奥尔良拥有篮球运动中最有天赋的大个子之二，与此同时，联盟中的其他人还没来得及梳理清楚刚刚发生了什么事情。就像某位联盟消息源所说的那样：“发生了什么？这交易是怎么发生的？我不能理解。” 事实上也没人知道为什么。之前从没有过如此愚蠢虚伪的交易。如果戴尔-登普斯能用巴迪-希尔德交易来德马库斯-考辛斯，那么一切皆有可能。在当下，交易之后的鹈鹕队面临三大问题。有关德马库斯-考辛斯的交易终于达成。重要的事情说三遍：没错，考神这次真的被交易走了。没错，鹈鹕真的只付出了一个受保护的2017首轮签，一个2017二
+    </div>
+    <hr>
+    <!--    垂直水平居中-->
+    <div class="center">
+        <img src="http://img1.gtimg.com/19/1906/190645/19064561_1200x1000_0.jpg" alt="" width="300">
+    </div>
+    <hr>
+    <!-- flex弹性盒模型1-->
+    <div class="flex-box">
+        <div class="first">第一个</div>
+        <div class="second">第二个</div>
+        <div class="third">第三个</div>
+    </div>
+    <!-- flex弹性盒模型2-->
+    <div class="flex-box2">
+        <div class="first2">第一个</div>
+        <div class="second2">第二个</div>
+        <div class="third2">第三个</div>
+    </div>
+</body>
+
+</html>

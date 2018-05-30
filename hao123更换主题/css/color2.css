@@ -1,0 +1,51 @@
+.header .w-1190 ul:nth-of-type(4) li:last-of-type a {
+    color: #0aa770;
+}
+
+.nav ul:nth-of-type(1) {
+    border-top: 2px solid #55aef5;
+}
+
+.nav ul:nth-of-type(1) li a:hover {
+    color: #55aef5;
+}
+
+.nav ul:nth-of-type(1) li a:nth-child(1) {
+    background: #55aef5;
+}
+
+.nav ul:nth-of-type(2) {
+    border: solid 1px #329bef;
+    border-top: none;
+}
+
+.nav ul:nth-of-type(2) li a:nth-child(1) {
+    color: #55aef5;
+}
+
+.cont-r .cont-rone {
+    border: 1px solid #329bef;
+}
+
+.cont-r .cont-rone ul:nth-child(1) li:nth-of-type(37) a,
+.cont-r .cont-rone ul:nth-child(1) li:nth-of-type(38) a,
+.cont-r .cont-rone ul:nth-child(1) li:nth-of-type(39) a,
+.cont-r .cont-rone ul:nth-child(1) li:nth-of-type(40) a,
+.cont-r .cont-rone ul:nth-child(1) li:nth-of-type(41) a,
+.cont-r .cont-rone ul:nth-child(1) li:nth-of-type(42) a {
+    color: #55aef5;
+}
+.cont-ltoggle .cont-ltogglenav li:nth-child(1) {
+    border-top: 1px solid #55aef5;
+    box-sizing: border-box;
+    color: #55aef5;
+}
+.cont-rtwo ul li a:nth-child(1) {
+    color: #55aef5;
+}
+.contr-three ul li:nth-child(1) a{
+    color:#55aef5 !important;
+}
+.contr-three ul li a:nth-child(1),.contr-three ul li a:nth-child(9){
+    color:#55aef5;
+}

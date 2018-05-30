@@ -1,0 +1,240 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+body {
+  width: 760px;
+  margin: 0 auto; }
+
+section {
+  background-color: #A9B2B7; }
+
+.number span, .number .bus-31-arrow:after, .bus-11 p {
+  background-color: #e0697d; }
+
+.bus-31-name .bus-red:before, .bus-pay, .bus-11 .bus-11-tit .this:after, .bus-11 .bus-11-name ul .bus-11-red {
+  color: #e0697d; }
+
+.clear {
+  zoom: 1; }
+  .clear:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0; }
+
+/*
+公用部分
+*/
+header {
+  width: 100%;
+  height: 120px;
+  background: #56658C;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin-bottom: 30px; }
+  header h3 {
+    font-size: 46px;
+    padding: 10px 0; }
+  header:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30px;
+    bottom: -30px;
+    left: 0;
+    background: #bbb; }
+
+/*
+头部车站名
+*/
+.number {
+  width: 100%;
+  padding: 10px 0 0; }
+  .number span, .number div {
+    float: left; }
+  .number span {
+    width: 18%;
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: bold; }
+  .number div i {
+    font-size: 18px;
+    font-style: normal; }
+  .number div b {
+    font-size: 14px;
+    word-spacing: -3px; }
+  .number .bus-31-arrow {
+    position: relative;
+    margin: 0 120px 0 20px; }
+    .number .bus-31-arrow:before {
+      position: absolute;
+      content: "";
+      height: 0;
+      width: 0;
+      border-left: 20px solid #e0697d;
+      border-top: 20px dashed transparent;
+      border-bottom: 20px dashed transparent;
+      top: 0;
+      right: -107px; }
+    .number .bus-31-arrow:after {
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 20px;
+      top: 10px;
+      right: -88px; }
+
+/*
+途经站显示
+*/
+.bus-31-name {
+  padding: 0 1%;
+  text-align: center;
+  margin-top: 56px; }
+  .bus-31-name li {
+    width: 26px;
+    float: left;
+    text-align: center;
+    position: relative; }
+  .bus-31-name .bus-red:before {
+    position: absolute;
+    content: "飞农路通江路";
+    width: 126px;
+    height: auto;
+    top: -42px;
+    left: -40px;
+    font-weight: bold;
+    font-size: 20px; }
+  .bus-31-name .bus-red:after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 10px solid #e0697d;
+    border-left: 10px dashed transparent;
+    border-right: 10px dashed transparent;
+    top: -11px;
+    left: 3px; }
+
+.bus-pay {
+  position: relative;
+  text-align: center;
+  letter-spacing: 5px; }
+  .bus-pay:before {
+    position: absolute;
+    content: "";
+    width: 630px;
+    height: 5px;
+    background: #000;
+    bottom: -20px;
+    left: 30px; }
+  .bus-pay:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #000;
+    border-right: 40px solid transparent;
+    bottom: -20px;
+    right: 10%; }
+
+/*
+公交31路
+*/
+/*
+公交11路
+*/
+.bus-11 {
+  margin-top: 30px;
+  padding: 0 1%;
+  text-align: center; }
+  .bus-11 .bus-11-tit {
+    width: 100%; }
+    .bus-11 .bus-11-tit b, .bus-11 .bus-11-tit div {
+      display: inline-block; }
+    .bus-11 .bus-11-tit b {
+      font-size: 50px;
+      margin-right: 20px; }
+    .bus-11 .bus-11-tit .next, .bus-11 .bus-11-tit .this {
+      width: 26px;
+      text-align: center;
+      position: relative;
+      font-size: 22px;
+      font-weight: bold;
+      color: #56658C; }
+    .bus-11 .bus-11-tit .next {
+      margin-right: 260px; }
+      .bus-11 .bus-11-tit .next:before {
+        position: absolute;
+        content: "";
+        width: 255px;
+        height: 5px;
+        background-color: #56658C;
+        top: 8px;
+        left: 30px; }
+      .bus-11 .bus-11-tit .next:after {
+        position: absolute;
+        content: "";
+        width: 255px;
+        height: 5px;
+        background-color: #56658C;
+        bottom: 8px;
+        left: 30px; }
+    .bus-11 .bus-11-tit .this {
+      margin-right: 10px; }
+      .bus-11 .bus-11-tit .this:after {
+        position: absolute;
+        content: "锦绣花园";
+        width: 100px;
+        height: auto;
+        bottom: 17px;
+        left: -185px;
+        font-weight: normal;
+        font-size: 20px; }
+    .bus-11 .bus-11-tit .bus-11-r {
+      width: 160px;
+      text-align: left; }
+      .bus-11 .bus-11-tit .bus-11-r span {
+        font-size: 20px;
+        margin-right: 15px;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 6px;
+        font-weight: bold; }
+      .bus-11 .bus-11-tit .bus-11-r .span1 {
+        letter-spacing: 10px; }
+  .bus-11 p {
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #fff;
+    font-size: 20px; }
+    .bus-11 p span {
+      display: inline-block;
+      width: 60%;
+      text-align: center;
+      letter-spacing: 20px; }
+  .bus-11 .bus-11-name {
+    padding: 10px 0; }
+    .bus-11 .bus-11-name ul li {
+      width: 26px;
+      text-align: center;
+      float: left;
+      margin-right: 15px; }
+
+/*
+左右圆球
+*/
+/*
+底部
+*/

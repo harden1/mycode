@@ -1,0 +1,1363 @@
+@charser "utf-8";
+
+/*全站公用样式*/
+
+body,
+html {
+    background: #f5f5f5;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif
+}
+
+.w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #555;
+    line-height: 18px;
+    height: 18px;
+    margin-bottom: 22px;
+    font-weight: 400;
+}
+
+.clear:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+.jk-btn {
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #35b558;
+    padding: 0 15px;
+    color: #35b558;
+    display: inline-block;
+    font-size: 14px;
+    -webkit-border-radius: 2px;
+    -mos-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    position: relative;
+    left: 50%;
+}
+
+
+/*头部*/
+
+header {
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #ececec;
+}
+
+.header {
+    position: relative;
+}
+
+
+/*logo*/
+
+.logo img {
+    width: 109px;
+    margin-top: 10px;
+    border: none;
+    float: left;
+    margin-right: 60px;
+}
+
+
+/*首页导航*/
+
+.header-nav {
+    float: left;
+    display: inline-block;
+}
+
+.header-nav li {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 50px;
+    cursor: pointer;
+    height: 60px;
+    float: left;
+}
+
+.header-nav li.home a {
+    color: #35b558;
+}
+
+.header-nav li:hover {
+    color: #35b558;
+    -webkit-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.header-nav li:hover i {
+    border-top: 1px solid #35b558;
+    border-left: 1px solid #35b558;
+    margin-bottom: -2px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.header-nav li i {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    -webkit-transform-origin: 4px 4px;
+    -moz-transform-origin: 4px 4px;
+    -ms-transform-origin: 4px 4px;
+    -o-transform-origin: 4px 4px;
+    transform-origin: 4px 4px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.menu {
+    position: absolute;
+    top: 61px;
+    left: 0;
+    background: #fff;
+    font-size: 12px;
+    color: #666;
+    width: 280px;
+    z-index:999;
+    /*
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+*/
+    display: none;
+}
+
+.menu h3 {
+    margin: 10px 0;
+    padding: 0 15px;
+    background: #fafafa;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.menu a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    white-space: normal;
+}
+
+.menu a em {
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-top: 8px;
+    margin-right: 5px;
+    background: url(../images/allicon4.png) left center no-repeat;
+    background-size: 16px 148px;
+}
+
+.vip-lesson a em {
+    background: url(../images/allicon.png) left center no-repeat;
+    background-size: 64px 64px;
+}
+
+.menu .web-icon em {
+    background: url(../images/allicon.png) left center no-repeat;
+    background-size: 64px 64px;
+    background-position: -15px -27px;
+}
+
+.menu .wechat-icon em {
+    background-position: -2px -60px;
+}
+
+.menu .python-icon em {
+    background-position: -2px -2px;
+}
+
+.menu .go-icon em {
+    background-position: -2px -38px;
+}
+
+.menu .android-icon em {
+    background: url(../images/allicon.png) left center no-repeat;
+    background-size: 64px 64px;
+    background-position: -45px -14px;
+}
+
+.menu .ios-icon em {
+    background-position: -2px -82px;
+}
+
+.vip-lesson {
+    padding: 10px 0;
+}
+
+.vip-lesson a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+
+.vip-lesson a em {
+    margin-top: 15px;
+}
+
+.vip-lesson a b {
+    float: right;
+    color: #bbb;
+    font-weight: normal;
+}
+
+.vip-lesson .kck-icon em {
+    background-position: 0 -13px;
+}
+
+.vip-lesson .zyljt-icon em {
+    background-position: -45px 0;
+}
+
+.vip-lesson .zstxt-icon em {
+    background-position: -30px -13px;
+}
+
+.vip-lesson .xlkc-icon em {
+    background-position: 0 0;
+}
+
+.vip-lesson .kcbq-icon em {
+    background-position: -15px -13px;
+}
+
+.vip-lesson .vip-icon em {
+    background-position: -16px 0;
+}
+
+.vip-lesson .jswd-icon em {
+    background-position: 0 -27px;
+}
+
+.vip-lesson .wiki-icon em {
+    background-position: -29px -27px;
+}
+
+.vip-lesson .sq-icon em {
+    background-position: 0 2px;
+}
+
+.vip-lesson .zygx-icon em {
+    background-position: -30px 0;
+}
+
+.menu-hover a:hover {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background: #fafafa;
+}
+
+
+/*侧登录搜索*/
+
+.icon-box {
+    float: right;
+    text-align: right;
+    width: 200px;
+    margin-right: 10px;
+    height: 60px;
+}
+
+.icon-box span {
+    position: relative;
+    height: 60px;
+    width: 17px;
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.icon-box .search {
+    background: url(../images/search-icon.png) center center no-repeat;
+    background-size: 17px 17px;
+}
+
+.icon-box .search:hover {
+    background: url(../images/search-icon2.png) center center no-repeat;
+    background-size: 17px 17px;
+}
+
+.icon-box .weixin {
+    background: url(../images/app-icon.png) center center no-repeat;
+    background-size: 17px 17px;
+}
+
+.icon-box .weixin:hover {
+    background: url(../images/app-icon2.png) center center no-repeat;
+    background-size: 17px 17px;
+}
+
+.icon-box .people {
+    background: url(../images/login-icon.png) center center no-repeat;
+    background-size: 17px 17px;
+}
+
+.icon-box .code {
+    position: absolute;
+    top: 61px;
+    left: -54px;
+    width: 120px;
+    background: #fff;
+    display: none;
+    z-index:99;
+}
+
+.icon-box .code:after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    content: "";
+    top: -8px;
+    right: 50px;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.icon-box .login {
+    position: absolute;
+    top: 61px;
+    right: 0;
+    width: 120px;
+    background: #fff;
+    padding: 10px 0;
+    display: none;
+    z-index:99;
+}
+
+.icon-box .login:after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    content: "";
+    top: -8px;
+    right: 10px;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.icon-box .login dl dt,
+.icon-box .login dl dd {
+    padding-left: 10px;
+    line-height: 35px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.icon-box .login dl a {
+    color: #666;
+}
+
+.icon-box .login dl dt {
+    text-align: center;
+}
+
+.icon-box .login dl dt a {
+    display: inline-block;
+    width: 45%;
+}
+
+.icon-box .login dl dd:hover {
+    background: #f5f5f5;
+}
+
+.icon-box .login dl dd:hover a {
+    color: #35b558;
+}
+
+.login dl dd em {
+    background: url("../images/allicon2.png") 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 12px;
+    height: 12px;
+    margin-top: 11px;
+    margin-right: 10px;
+    float: left;
+}
+
+.login dl dd.xxzx-icon em {
+    background-position: -16px -15px;
+}
+
+.login dl dd.grzy-icon em {
+    background-position: -45px -1px;
+}
+
+.login dl dd.xxtz-icon em {
+    background-position: -16px -30px;
+}
+
+.login dl dd.zhsz-icon em {
+    background-position: -30px -1px;
+}
+
+
+/*搜索*/
+
+.searchbox {
+    display: none;
+    height: 59px;
+    line-height: 59px;
+    width: 850px;
+    background: #fff;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    -webkit-transform: scale(0.1, 1);
+    transform: scale(0.1, 1);
+    transform: scale(0.1, 1);
+    transform: scale(0.1, 1);
+    transform: scale(0.1, 1);
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+.searchbox .search-btn {
+    background: url("../images/search-icon.png") 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0, 0;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    margin-top: 24px;
+}
+
+.searchbox .close-btn {
+    width: 15px;
+    height: 15px;
+    margin-top: 22px;
+    cursor: pointer;
+    background: url("../images/close-icon.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1200;
+}
+
+.searchbox input {
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    font-size: 12px;
+    vertical-align: top;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.searchbox .tagbox {
+    width: 300px;
+    text-align: right;
+    display: inline;
+    margin-right: 50px;
+    float: right;
+}
+
+.searchbox .tagbox a {
+    font-size: 12px;
+    color: #808080;
+    background: #f5f5f5;
+    padding: 3px 5px;
+    margin-left: 10px;
+}
+
+
+/*banner*/
+
+.wrapper-banner {
+    height: 330px;
+}
+
+.banner {
+    width: 750px;
+    height: 330px;
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner ul {
+    position: relative;
+    width: 4500px;
+    height: 330px;
+    right: 0;
+}
+.banner ul li{
+    float:left;
+    width:750px;
+}
+.banner ul li img{
+    display: inline-block;
+    width: 750px;
+    height: 330px;
+}
+
+.banner .control {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner .control span {
+    display: inline-block;
+    margin-right: 8px;
+    text-align: center;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.banner .control span.active {
+    width: 8px;
+    height: 16px;
+    background: #35b558;
+    position: relative;
+    top: -4px;
+}
+
+.btn-control {
+    display: none;
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    z-index: 2;
+    cursor: pointer;
+    background: url(../images/arrow_dd5a57d.png) no-repeat center;
+    background-size: 50px 80px;
+}
+
+.btn-r {
+    left: 0;
+}
+
+.btn-l {
+    right: 0;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+
+.jk-login {
+    float: left;
+    width: 240px;
+    height: 160px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 26px 29px 24px;
+    margin-bottom: 10px;
+}
+
+.userImg {
+    float: left;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.jk-login .btn {
+    float: left;
+    font-size: 14px;
+    display: inline-block;
+    width: 85px;
+    height: 32px;
+    border: 1px solid #35b558;
+    border-radius: 2px;
+    color: #35b558;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.jk-login .registerNow {
+    margin-right: 0;
+}
+
+.jk-login p {
+    line-height: 28px;
+    color: #555;
+    float: left;
+}
+
+.jk-login>div {
+    float: left;
+    width: 100%;
+}
+/*内容*/
+/* 右侧视频列表展示*/
+.f_l{
+        position: relative;
+    float:left;
+    width: 210px;
+    box-sizing: border-box;
+        border: 1px solid #35b558;
+    background-color: #fff;
+}
+.f_l h3{
+        height: 45px;
+    padding: 0 32px;
+    border-bottom: 1px solid #eee;
+    line-height: 45px;
+    cursor: default;
+        font-size: 14px;
+    font-weight: 400;
+    background:url(../images/icon-course-curr_0743c98.png) 10px center no-repeat;
+    background-size:15px 15px;
+}
+.f_l h3 a{
+    color:#35b558;
+}
+.f_l ul li>div{
+        cursor: pointer;
+    width: 208px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #f5f5f5;
+    background: url(../images/icon-more_cd68622.png) 186px center no-repeat;
+    background-size: 6px 10px;
+    padding-left: 32px;
+    box-sizing: border-box;
+}
+.f_l ul li>div:hover{
+        border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+/*    border-right:1px solid #fff;*/
+    height: 38px;
+    width: 210px;
+    margin-top: -1px;
+    margin-left: -1px;
+    padding-left: 24px;
+    background:#fff;
+    -webkit-box-shadow: 1px 2px 4px rgba(0,0,0,.1);
+    box-shadow: 1px 2px 4px rgba(0,0,0,.1);
+}
+.f_l ul li>div:hover>a{
+        display: block;
+    width: 188px;
+    background: #fff;
+    position: absolute;
+    z-index: 1102;
+    border-right: 3px solid #fff;
+    color: #35b558;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.f_l ul li:last-of-type>div:hover{
+    border-bottom:0;
+}
+.f_l ul li .list-show{
+    display: none;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,.1);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0,0,.1);
+    box-shadow: 1px 2px 4px rgba(0,0,0,.1);
+    overflow: hidden;
+    min-height: 418px;
+    min-width: 401px;
+    background: #fff;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 209px;
+    top: -1px;
+    z-index: 1101;
+    list-style: none;
+    margin-left: -1px;
+    float: left;
+    width: 591px;
+    box-sizing: border-box;
+}
+.f_l ul li .list-show dl{
+    margin:0 15px;
+    overflow: hidden;
+}
+.f_l ul li .list-show dl dt{
+        display: block;
+    border-bottom: 1px solid #f5f5f5;
+    height: 37px;
+    line-height: 45px;
+}
+.f_l ul li .list-show dl dd{
+        list-style: none;
+    padding: 3px 0;
+}
+.f_l ul li .list-show dl dd a{
+        height: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 0 7px;
+    color: #666;
+    display: inline-block;
+    font-size: 12px;
+    border-left: 1px solid #e0e0e0;
+    float: left;
+    white-space: nowrap;
+    font-weight: 400;
+}
+.f_l ul li .list-show dl dd a:nth-child(1){
+    border-left:0;
+}
+.f_l ul li .list-show dl dd a:hover{
+    color:#35b558;
+}
+/*课程列表*/
+.lesson-list ul li{
+        height: 100px;
+    padding: 0;
+    background-color: #fff;
+    margin-top: 13px;
+    cursor: pointer;
+    z-index:9999;
+}
+.lesson-list ul li:hover{
+    
+}
+.lesson-list ul li .lessonimg-box{
+        width: 185px;
+    height: 100px;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+}
+.lesson-list ul li  .lessonplay{
+        background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+          filter:alpha(opacity=0);  
+      -moz-opacity:0;  
+      -khtml-opacity: 0;  
+      opacity: 0; 
+        -webkit-transition:all 0.8s;
+     -moz-transition:all 0.8s;
+     -ms-transition:all 0.8s;
+     -o-transition:all 0.8s;
+    transition:all 0.8s;
+}
+.lesson-list ul li  .lessonplay.on{
+            filter:alpha(opacity=100);  
+      -moz-opacity:1;  
+      -khtml-opacity: 1;  
+      opacity: 1;   
+}
+.lesson-list ul li  .lessonplay em{
+        position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(https://s1.jikexueyuan.com/course/images/player_icon_5c67475.png) no-repeat;
+    background-size: 50px 50px;
+    cursor: pointer;
+}
+.lesson-list ul li img{
+        width: 185px;
+    height: 100px;
+}
+.lesson-list ul li .lesson-infor{
+    float:left;
+    width:556px;
+}
+.lesson-list ul li .lessonicon-box img{
+    width:16px;
+    height:16px;
+}
+.lesson-list ul li h2{
+        font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.lesson-list ul li p{
+        color: gray;
+    font-size: 12px;
+    opacity: 1!important;
+    line-height: 18px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.timeandicon .cf{
+    position:relative;
+}
+.timeandicon .cf:nth-child(1) dl dd{
+        font-size: 12px;
+    float: left;
+    display: inline-block;
+    margin-right: 15px;
+}
+.timeandicon .cf:nth-child(1) dl dd:nth-child(1) i{
+    background: url(../images/icon_7f8b929.png) 0 -72px no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+.timeandicon .cf:nth-child(1) dl dd:nth-child(2) i{
+    background: url(../images/one-ji_1731712.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+.lesson-list .lessonicon-box{
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: -68px;
+}
+/*分页*/
+.page-nav{
+    overflow:hidden;
+    margin-top:8px;
+    margin-bottom:30px;
+    clear:both;
+}
+#page-nav{
+        text-align: center;
+    margin-top: 17px;
+    height: 28px;
+}
+ul.pages{
+        display: block;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 10px 0 45px;
+    padding: 0;
+}
+ul.pages li.pgNext{
+    width: 50px;
+}
+ul.pages li{
+   float:left;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    margin-left: 5px;
+    line-height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 12px;
+    background: #fff;
+    color: gray;
+    border: 1px solid #e4e4e4;
+}
+ul.pages li.pagenow{
+    width:100px;
+}
+ul.pages li.thpoint{
+    border: 0;
+    cursor: auto;
+    color: #000;
+    background: none!important;
+    margin-top: 3px;
+}
+ul.pages li.pgEmpty{
+        border: 1px solid #f0f0f0;
+    color: #d9d6c3;
+    width: 50px;
+    cursor: default;
+}
+ul.pages li:nth-child(2){
+    width:72px;
+}
+ul.pages li.pgCurrent{
+        background: #35b558;
+    color: #fff;
+    border: 1px solid #35B558;
+}
+
+ul.pages li.go{
+    width: 32px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 6px;
+}
+.lesson-list1 ul li{
+        width: 250px;
+    height: 225px;
+    float: left;
+    margin-right: 13px;
+    margin-bottom: 13px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.lessonimg-box{
+    position:relative;
+}
+.lesson-list1 .lessonimg-box img{
+    width:100%;
+    height:135px;
+}
+.lesson-list1 .lesson-infor{
+        padding: 10px;
+    position: relative;
+    z-index: 200;
+    height: 88px;
+    overflow: hidden;
+    background: #fff;
+    box-sizing: border-box;
+}
+.lesson-list1 li:nth-child(3n+3){
+ margin-right:0;   
+}
+.lesson-list1 ul{
+    margin-top:15px;
+}
+.lesson-list1 .lesson-infor .lesson-info-h2, .lesson-list1 .lesson-infor h5{
+        font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 12px;
+    height: 36px;
+    overflow: hidden;
+}
+.lesson-list1 .timeandicon dl dd{
+      font-size: 12px;
+    float: left;
+    display: inline-block;
+    margin-right: 15px;  
+}
+.lesson-list1 .lessonplay{
+        background: #000;
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.lesson-list1 .lessonplay em{
+        position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(https://s1.jikexueyuan.com/common/images/player_icon_5c67475.png) 0 0 no-repeat;
+    cursor: pointer;
+    background-size: 50px 50px;
+}
+.lesson-list1 .lesson-infor p{
+      color: gray;
+    font-size: 12px;
+    line-height: 18px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-bottom: 10px;
+    display: none;  
+}
+.lesson-list1 .lesson-infor .lessonicon-box img{
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+.lesson-list1 .lesson-infor .lessonicon-box{
+        position: absolute;
+    right: 0;
+    text-align: right;
+    bottom: -12px;
+}
+.lesson-list1 .lesson-infor .timeandicon{
+        font-size: 12px;
+    color: gray;
+    position: relative;
+}
+/*左侧导航*/
+.container{
+    overflow: hidden;
+    margin-top:20px;
+}
+.f_r{
+    float:right;
+    width:776px;
+}
+.f_r .sort{
+    box-sizing: content-box;
+    height: 38px;
+    background: #fff;
+    color: gray;
+    line-height: 38px;
+}
+.f_r .sort h1{
+    float: left;
+    padding: 0 18px;
+    background: #fff;
+    border-right: 1px solid #e4e4e4;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: default;
+}
+.f_r .sort dl{
+    position: relative;
+    z-index: 10;
+    float: left;
+    height: 36px;
+    margin: 0 1px 0 -1px;
+    white-space: nowrap;
+}
+.f_r .sort dl dt{
+        padding: 0 18px;
+    cursor: default;
+}
+.f_r .sort .menu-sub dd{
+    display:none;
+    background:#fff;
+    z-index:99;
+}
+.f_r .sort .menu-sub dd p{
+    text-indent:17px;
+}
+.f_r .sort dl dt dd{
+        position: relative;
+    z-index: 12;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .1s ease .1s;
+    -moz-transition: all .1s ease .1s;
+    -ms-transition: all .1s ease .1s;
+    transition: all .1s ease .1s;
+}
+.previewMode{
+    float:right;
+}
+.previewMode ul li{
+    float:left;
+    width: 36px;
+    height: 38px;
+    border-left: 1px solid #f5f5f5;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+.previewMode ul li:nth-child(1){
+    background:url(../images/icon-kuai_3c1a8cf.png) center center no-repeat;
+    background-size:14px 14px;
+}
+.previewMode ul li:nth-child(2){
+    background:url(../images/icon-list_6d9f87f.png) center center no-repeat;
+    background-size:14px 14px;
+}
+/*底部*/
+
+footer {
+    background: #fff;
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer {
+    min-width: 1000px;
+    background: #fff;
+}
+
+.jkinfor-block {
+    background: #fff;
+}
+
+.jkinfor {
+    position: relative;
+    width: 1000px;
+    height: 215px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f5f5f5;
+    padding-left: 224px;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.jk-logo {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    display: inline-block;
+    width: 160px;
+}
+
+.jk-logo img {
+    width: 109px;
+    height: 40px;
+    display: block;
+}
+
+.jk-logo p {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+.jkinfor dl {
+    width: 135px;
+    color: #808080;
+    float: left;
+}
+
+.jkinfor dl dt {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.jkinfor dl dd {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.jkinfor dl dd a {
+    color: #808080;
+}
+
+.jkinfor dl dd a:hover {
+    color: #35b558;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.jk-down {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    display: inline-block;
+    width: 175px;
+    text-align: left;
+}
+
+.jk-down p {
+    color: #808080;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.jk-down .downCon {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 30px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 10px;
+    line-height: 30px;
+    color: #808080;
+    font-size: 13px;
+    padding-left: 40px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.jk-down .downCon img {
+    width: 115px;
+    height: 153px;
+    position: absolute;
+    top: -157px;
+    left: 12px;
+    z-index: 2;
+    display: none;
+}
+
+.jk-down .down-ios {
+    background: url(../images/icon-down-ios.png) no-repeat 0 0;
+    background-size: 30px 30px;
+}
+
+.jk-down .down-android {
+    background: url(../images/icon-down-and.png)no-repeat 0 0;
+    background-size: 30px 30px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+.copyright a {
+    color: #999;
+}
+
+.copyright a:hover {
+    color: #35b558;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.szfw_logo {
+    margin: 15px auto 0;
+}
+
+.copyright .down-wechat {
+    position: absolute;
+    display: inline-block;
+    right: 20px;
+    top: 13px;
+    height: 15px;
+    width: 20px;
+    background: url(../images/icon-down-wechat.png)no-repeat 0 0;
+    background-size: 18px 15px;
+}
+
+.copyright .down-sina {
+    position: absolute;
+    display: inline-block;
+    right: 40px;
+    top: 13px;
+    height: 15px;
+    width: 20px;
+    margin-right: 10px;
+    background: url(../images/icon-down-sina.png)no-repeat 0 0;
+    background-size: 20px 15px;
+}
+
+
+/*右侧固定图标*/
+
+.gotop {
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 50px;
+    width: 34px;
+    text-align: center;
+    z-index: 2000;
+}
+
+.gotop .top {
+    display: block;
+    background: url(../images/gotop.jpg) 0 0 no-repeat;
+    background-size: 34px 103px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.gotop .top:hover {
+    background: url(../images/gotop2.jpg) 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 34px 103px;
+    -webkit-background-size: 34px 103px;
+    -moz-background-size: 34px 103px;
+}
+
+.gotop .jk-app {
+    position: relative;
+    display: block;
+    background: #f7f7f7 url(../images/phone-1.png) center center no-repeat;
+    background-size: 12px 24px;
+    width: 34px;
+    height: 35px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.gotop .jk-app:hover {
+    background: #f7f7f7 url(../images/phone-2.png) center center no-repeat;
+    background-size: 12px 24px;
+}
+
+.gotop .jk-app .appewm {
+    background: url(../images/appewm.png) center center no-repeat;
+    background-size: 100%;
+    width: 126px;
+    height: 159px;
+    position: absolute;
+    z-index: 2100;
+    left: -126px;
+    top: -70px;
+    display: none;
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML+CSS面试题总结</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>HTML面试题整理</h2>
+        <h3>1、常见浏览器内核</h3>
+        <ul>
+            <li> IE: trident内核</li>
+            <li> Firefox：gecko内核</li>
+            <li>Safari:webkit内核</li>
+            <li>Opera:以前是presto内核，Opera现已改用Google Chrome的Blink内核</li>
+            <li>Chrome:Blink(基于webkit，Google与Opera Software共同开发)</li>
+        </ul>
+        <hr>
+        <h3>2、Doctype申明的意义。</h3>
+        <p>
+            DOCTYPE声明位于文档中的最前面的位置，处于 html标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范。
+            <span class="red">（重点：告诉浏览器按照何种规范解析页面）</span>
+        </p>
+        <hr>
+        <h3>3、html5新增的元素有那些？</h3>
+        <p>
+            新特性，新增元素：
+            <br> 内容元素：article、footer、header、nav、section
+            <br> 表单控件：calendar、date、time、email、url、search
+            <br> 控件元素：webworker，websockt，Geolocation
+            <br>
+        </p>
+        <hr>
+        <h3>4、对WEB标准以及W3C的理解与认识</h3>
+        <p>标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外 链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维 护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性；</p>
+        <hr>
+        <h3>5、xhtml和html有什么区别</h3>
+        <p>HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言
+            <br> 最主要的不同：
+            <br> XHTML 元素必须被正确地嵌套。
+            <br> XHTML 元素必须被关闭。
+            <br> 标签名必须用小写字母。
+            <br> XHTML 文档必须拥有根元素。</p>
+        <hr>
+        <h3>6、HTML5 引入什么新的表单属性？</h3>
+        <p>
+
+            Datalist Datatime Output Keygen Date Month Week Time Number Range Email Url
+        </p>
+        <input list="cars" />
+        <datalist id="cars">
+            <option value="BMW">
+                <option value="Ford">
+                    <option value="Volvo">
+        </datalist>
+        <form action="/example/html5/demo_form.asp" method="get">
+            <input type="email" name="user_email" />
+            <input type="submit" />
+            <br>
+            <input type="datetime" name="user_date" />
+        </form>
+        <hr>
+        <h3>7、页面导入样式时，使用Link和@import有什么区别？</h3>
+        <p>
+            link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;
+            <br> 页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
+            <br> import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;
+            <br>
+        </p>
+        <hr>
+        <h3>8、iframe 有哪些缺点？</h3>
+        <p>
+            iframe会阻塞主页面的Onload事件；
+            <br> 搜索引擎的检索程序无法解读这种页面，不利于SEO；
+            <br> iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。
+            <br> 使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好通过JavaScript动态给iframe添加src属性值，这样可以绕开以上两个问题。
+            <br>
+        </p>
+        <h2>CSS面试题整理</h2>
+        <h3>1、css中使用列布局是什么？</h3>
+        <p>
+            CSS列布局可以帮助你分配文字为一个个列，要实现列布局，我们需要指定以下内容：要将文本分割成多少列以及要指定列数，
+        </p>
+        <hr>
+        <div class="crow">
+            内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域 内容区域
+        </div>
+        <h3>2、解释下css的盒模型</h3>
+        <p>
+            CSS和模型是围绕在HTML元素周围的定义Border(边界)，padding(内边距)和margin(外边距)的矩形空间
+            <br> Border(边界)：定义了元素包含的最大区域，我们能够使边界可见，不可见，定义高度和宽度等；
+            <br> Padding(内边距)：定义了边界和内部元素的间距
+            <br> Margin：定义了边界和任何相邻元素的间距
+        </p>
+        <hr>
+        <div class="box"></div>
+        <hr>
+        <h3>4、CSS3新增伪类有那些？</h3>
+        <p>
+            :first-of-type
+            <br> :last-of-type
+            <br> :only-of-type
+            <br> :only-child
+            <br> :nth-child(2)
+            <br>
+        </p>
+        <div class="example">
+            <p>css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类</p>
+            <p>css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类</p>
+            <p>css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类</p>
+            <p>css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类</p>
+            <p>css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类</p>
+            <p>css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类</p>
+            <p>css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类</p>
+        </div>
+        <div class="example">
+            <p>css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类css3伪类</p>
+        </div>
+        <hr>
+        <h3>5、css3动画有哪些实现方式？</h3>
+        <p>Transitions 、transforms和 Animations
+            <br> Transitions特点：平滑的改变CSS的值 br transforms特点：变换主要实现（拉伸，压缩，旋转，偏移）
+            <br> Animations特点：适用于CSS2，CSS3
+            <br>
+        </p>
+        <div class="animation"></div>
+        <hr>
+        <h3>6、清除浮动的各种方法</h3>
+        <p>
+            父级div定义 height
+            <br> 结尾处加空div标签 clear:both
+            <br> 父级div定义 伪类:after 和 zoom
+            <br> 父级div定义 overflow:hidden
+            <br> 父级div定义 overflow:auto
+            <br> 父级div 也一起浮动
+            <br> 父级div定义 display:table
+            <br> 结尾处加 br标签 clear:both
+            <br>
+        </p>
+        <hr>
+        <h3>7、解释下css hack</h3>
+        <p>针对不同的浏览器去写不同的CSS，让它能够同时兼容不同的浏览器，能在不同的浏览器中也能得到我们想要的页面效果</p>
+        <table id="tipTable">
+            <tr class="innerLord">
+                <th>标记</th>
+                <th>IE6</th>
+                <th>IE7</th>
+                <th>IE8</th>
+                <th>FF</th>
+                <th>Opera</th>
+                <th>Sarari</th>
+            </tr>
+            <tr class="innerDiff">
+                <td>[*+>
+                    <]</td>
+                        <td>&#8730;</td>
+                        <td>&#8730;</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+            </tr>
+            <tr class="innerDiff">
+                <td>&#95;</td>
+                <td>&#8730;</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+            </tr>
+            <tr class="innerDiff">
+                <td>&#92;9</td>
+                <td>&#8730;</td>
+                <td>&#8730;</td>
+                <td>&#8730;</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+            </tr>
+            <tr class="innerDiff">
+                <td>&#92;0</td>
+                <td>X</td>
+                <td>X</td>
+                <td>&#8730;</td>
+                <td>X</td>
+                <td>&#8730;</td>
+                <td>X</td>
+            </tr>
+            <tr class="innerDiff">
+                <td>@media screen and (-webkit-min-device-pixel-ratio:0){<span class="red">.bb </span>{}}</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>&#8730;</td>
+            </tr>
+            <tr class="innerDiff">
+                <td><span class="red">.bb </span>, x:-moz-any-link, x:default</td>
+                <td>X</td>
+                <td>&#8730;</td>
+                <td>X</td>
+                <td>&#8730;(ff3.5及以下)</td>
+                <td>X</td>
+                <td>X</td>
+            </tr>
+            <tr class="innerDiff">
+                <td>@-moz-document url-prefix(){<span class="red">.bb</span>{}}</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>&#8730;</td>
+                <td>X</td>
+                <td>X</td>
+            </tr>
+            <tr class="innerDiff">
+                <td>@media all and (min-width: 0px){<span class="red">.bb </span>{}}</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>&#8730;</td>
+                <td>&#8730;</td>
+                <td>&#8730;</td>
+            </tr>
+            <tr class="innerDiff">
+                <td>* +html <span class="red">.bb </span>{}</td>
+                <td>X</td>
+                <td>√</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+            </tr>
+            <tr class="innerLord">
+                <td>游览器内核</td>
+                <td>Trident</td>
+                <td>Trident</td>
+                <td>Trident</td>
+                <td>Gecko</td>
+                <td>Presto</td>
+                <td>WebKit</td>
+            </tr>
+        </table>
+        <hr>
+        <h3>8、用css3实现一个类似幻灯片的效果</h3>
+        <div class="ani"></div>
+        <hr>
+        <h3>9、行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h3>
+        <p>
+            行内元素：a b span img input select strong
+            <br> 块级元素：div ul ol li dl dt dd h1 h2 h3 h4 p 等
+            <br> 空元素：br hr img link meta
+            <br>
+        </p>
+        <h3>10、如何居中一个浮动元素？</h3>
+        <p>
+            代码如下：
+            <br> .div{width:500px;height:300px;margin:-150px 0 0 -250px;position:relative;background:green;left:50%;top:50%;}
+        </p>
+        <h3>11、为什么要初始化 CSS 样式？</h3>
+        <p>为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对 CSS 初始化往往会出现浏览器之间的页面显示差异。</p>
+        <h3>12、什么是响应式布局?</h3>
+        <p>为不同中端显示不同的显示@media screen and (min-width:480px) and (max-width:790px){ }</p>
+        <hr>
+        <h3>13、解释下bootstrap删格系统</h3>
+        <table class="reference notranslate">
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th>超小设备手机（&lt;768px）</th>
+                    <th>小型设备平板电脑（≥768px）</th>
+                    <th>中型设备台式电脑（≥992px）</th>
+                    <th>大型设备台式电脑（≥1200px）</th>
+                </tr>
+                <tr>
+                    <td>网格行为</td>
+                    <td>一直是水平的</td>
+                    <td>以折叠开始，断点以上是水平的</td>
+                    <td>以折叠开始，断点以上是水平的</td>
+                    <td>以折叠开始，断点以上是水平的</td>
+                </tr>
+                <tr>
+                    <td>最大容器宽度</td>
+                    <td>None (auto)</td>
+                    <td>750px</td>
+                    <td>970px</td>
+                    <td>1170px</td>
+                </tr>
+                <tr>
+                    <td>Class 前缀</td>
+                    <td><b>.col-xs-</b></td>
+                    <td><b>.col-sm-</b></td>
+                    <td><b>.col-md-</b></td>
+                    <td><b>.col-lg-</b></td>
+                </tr>
+                <tr>
+                    <td>列数量和</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>最大列宽</td>
+                    <td>Auto</td>
+                    <td>60px</td>
+                    <td>78px</td>
+                    <td>95px</td>
+                </tr>
+                <tr>
+                    <td>间隙宽度</td>
+                    <td>30px
+                        <br>（一个列的每边分别 15px）</td>
+                    <td>30px
+                        <br>（一个列的每边分别 15px）</td>
+                    <td>30px
+                        <br>（一个列的每边分别 15px）</td>
+                    <td>30px
+                        <br>（一个列的每边分别 15px）</td>
+                </tr>
+                <tr>
+                    <td>可嵌套</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>偏移量</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>列排序</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3>14、常见浏览器兼容问题</h3>
+        <p>双倍边距bug
+            <br> 块 浮动 横向margin display：inline
+            <br> li本身没浮动内容浮动 ie6 li 内容浮动
+            <br> 给li加浮动 li加vertical-alian ie6 下，下margin消失
+            <br> 当一行子元素占有的宽度之和和父级的宽度相差超过3px，或者有不满行状态的时候最有一行的子元素的下margin值就会失效、 ie6下文字溢出bug
+            <br> 原因 1.浮动元素前面有注释 或者内联元素 内联元素越多，溢出越多
+            <br> 子元素的宽度和父级的宽度相差小于3px的时候 解决办法用div包起来 或者把父级元素宽度调大</p>
+        <hr>
+        <h3>15、CSS选择符有哪些?哪些属性可以继承?优先级算法如何计算?内联和important哪个优先级高</h3>
+        <p>
+            标签选择符 类选择符 id选择符
+            <br> 继承不如指定 Id>class>标签选择
+            <br> 后者优先级高
+            <br>
+        </p>
+        <hr>
+        <h3>16、何为怪异盒模型</h3>
+        <p>
+            在标准模式下，一个块的总宽度= width + margin(左右) + padding(左右) + border(左右) <br>
+            在怪异模式下，一个块的总宽度= width + margin(左右)（即width已经包含了padding和border值） <br>
+        </p>
+        <div class="center">
+            <img src="http://img.blog.csdn.net/20160429135409319" alt="">
+            <img src="http://img.blog.csdn.net/20160429135440850" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

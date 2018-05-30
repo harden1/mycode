@@ -1,0 +1,51 @@
+.header .w-1190 ul:nth-of-type(4) li:last-of-type a {
+    color: #0aa770;
+}
+
+.nav ul:nth-of-type(1) {
+    border-top: 2px solid #c150d4;
+}
+
+.nav ul:nth-of-type(1) li a:hover {
+    color: #c150d4;
+}
+
+.nav ul:nth-of-type(1) li a:nth-child(1) {
+    background: #c150d4;
+}
+
+.nav ul:nth-of-type(2) {
+    border: solid 1px #c723e2;
+    border-top: none;
+}
+
+.nav ul:nth-of-type(2) li a:nth-child(1) {
+    color: #c150d4;
+}
+
+.cont-r .cont-rone {
+    border: 1px solid #c723e2;
+}
+
+.cont-r .cont-rone ul:nth-child(1) li:nth-of-type(37) a,
+.cont-r .cont-rone ul:nth-child(1) li:nth-of-type(38) a,
+.cont-r .cont-rone ul:nth-child(1) li:nth-of-type(39) a,
+.cont-r .cont-rone ul:nth-child(1) li:nth-of-type(40) a,
+.cont-r .cont-rone ul:nth-child(1) li:nth-of-type(41) a,
+.cont-r .cont-rone ul:nth-child(1) li:nth-of-type(42) a {
+    color: #c150d4;
+}
+.cont-ltoggle .cont-ltogglenav li:nth-child(1) {
+    border-top: 1px solid #c150d4;
+    box-sizing: border-box;
+    color: #c150d4;
+}
+.cont-rtwo ul li a:nth-child(1) {
+    color: #c150d4;
+}
+.contr-three ul li:nth-child(1) a{
+    color:#c150d4 !important;
+}
+.contr-three ul li a:nth-child(1),.contr-three ul li a:nth-child(9){
+    color:#c150d4;
+}
